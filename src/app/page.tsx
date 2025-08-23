@@ -9,21 +9,20 @@ import { PortfolioData } from "@/data/portfolio";
 
 export const Home = () => {
   return (
-   <div className="flex-1">
+    <div className="flex-1">
       <Hero />
       <Separator />
 
-      <Flow steps={flowData.steps}/>
+      <Flow steps={flowData.steps} />
       <Separator />
 
-      <PortfolioCarousel portfolioData={PortfolioData.portfolioData}/>
+      <PortfolioCarousel portfolioData={PortfolioData.portfolioData} />
       <Separator />
 
-      <Faq data={FaqData}/>
+      <Faq data={FaqData} />
       <Separator />
-
-   </div>
+    </div>
   );
-}
+};
 
 export default Home;
